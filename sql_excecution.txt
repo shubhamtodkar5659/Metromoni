@@ -1,0 +1,6 @@
+ALTER TABLE `states` ADD `is_active` INT NOT NULL COMMENT '1=active,0=inactive ' AFTER `country_id`;
+
+ALTER TABLE `cities` ADD `is_active` TINYINT NOT NULL COMMENT '1=active,0=inactive' AFTER `state_id`;
+
+ALTER TABLE `countries` ADD `is_active` TINYINT NOT NULL COMMENT '1=active,0=inactive' AFTER `name`;
+
